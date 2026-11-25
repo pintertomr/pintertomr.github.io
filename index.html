@@ -1,0 +1,1165 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>性教育科普_性健康知识_青春期成长指南</title>
+<meta name="description" content="性教育科普聚焦性健康知识、青春期成长与两性关系，提供科学实用的健康指南、成长答疑与自我认知内容，适合青少年及家长共同阅读学习。">
+<meta name="keywords" content="性健康知识,青春期成长,两性关系,自我认知,健康科普">
+<style>
+  :root{
+    --bg:#f7f5f2;
+    --panel:#ffffff;
+    --ink:#1f2430;
+    --ink-soft:#4a5262;
+    --ink-mute:#7a8395;
+    --line:#e5e0d8;
+    --brand:#2d6a6a;
+    --brand-deep:#1e4a4a;
+    --brand-soft:#e4efed;
+    --accent:#c96a4a;
+    --accent-soft:#f7e8e2;
+    --gold:#b8892f;
+    --radius:14px;
+    --radius-sm:9px;
+    --shadow:0 2px 10px rgba(31,36,48,.06);
+    --shadow-lg:0 10px 30px rgba(31,36,48,.10);
+    --maxw:1320px;
+    --sticky-h:104px;
+    font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0;background:var(--bg);color:var(--ink);
+    line-height:1.7;font-size:15px;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
+  h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+  p{margin:0 0 1em}
+  ul,ol{margin:0;padding:0;list-style:none}
+  button{font:inherit;cursor:pointer}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+  /* ============ 吸顶公告条 ============ */
+  .announce{
+    position:sticky;top:0;z-index:60;
+    background:linear-gradient(90deg,var(--brand-deep),var(--brand));
+    color:#eaf3f2;font-size:13px;
+  }
+  .announce-inner{
+    max-width:var(--maxw);margin:0 auto;
+    display:flex;align-items:center;gap:12px;
+    padding:8px 20px;
+  }
+  .announce .dot{
+    width:7px;height:7px;border-radius:50%;background:#7fd6c2;
+    box-shadow:0 0 0 3px rgba(127,214,194,.25);flex:none;
+  }
+  .announce .txt{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .announce .txt b{color:#fff}
+  .announce a{color:#c9ece5;border-bottom:1px dashed rgba(201,236,229,.5);white-space:nowrap}
+  .announce a:hover{color:#fff}
+
+  /* ============ 吸顶页头 ============ */
+  .header{
+    position:sticky;top:34px;z-index:55;
+    background:rgba(255,255,255,.94);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    max-width:var(--maxw);margin:0 auto;
+    display:flex;align-items:center;gap:24px;
+    padding:12px 20px;
+  }
+  .brand{display:flex;align-items:center;gap:11px;flex:none}
+  .brand-logo{width:40px;height:40px;flex:none}
+  .brand-text{display:flex;flex-direction:column;line-height:1.15}
+  .brand-name{font-size:19px;font-weight:800;letter-spacing:.5px;color:var(--brand-deep)}
+  .brand-sub{font-size:11px;color:var(--ink-mute);letter-spacing:2px}
+  .nav{display:flex;gap:4px;flex-wrap:wrap;flex:1}
+  .nav a{
+    padding:7px 11px;border-radius:8px;font-size:14px;color:var(--ink-soft);
+    transition:.15s;white-space:nowrap;
+  }
+  .nav a:hover{background:var(--brand-soft);color:var(--brand-deep)}
+  .head-tools{display:flex;align-items:center;gap:10px;flex:none}
+  .search-box{
+    display:flex;align-items:center;gap:6px;
+    background:var(--bg);border:1px solid var(--line);border-radius:999px;
+    padding:5px 6px 5px 13px;
+  }
+  .search-box input{
+    border:0;background:transparent;outline:none;font-size:13px;width:130px;color:var(--ink);
+  }
+  .search-box button{
+    border:0;background:var(--brand);color:#fff;border-radius:999px;
+    padding:6px 13px;font-size:12.5px;transition:.15s;
+  }
+  .search-box button:hover{background:var(--brand-deep)}
+  .btn-ghost{
+    border:1px solid var(--line);background:#fff;border-radius:999px;
+    padding:7px 15px;font-size:13px;color:var(--ink-soft);transition:.15s;
+  }
+  .btn-ghost:hover{border-color:var(--brand);color:var(--brand-deep)}
+
+  /* ============ 首屏 ============ */
+  .hero{
+    max-width:var(--maxw);margin:0 auto;padding:44px 20px 30px;
+    display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;
+  }
+  .hero-eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--brand-soft);color:var(--brand-deep);
+    font-size:12.5px;font-weight:600;letter-spacing:1px;
+    padding:5px 13px;border-radius:999px;margin-bottom:18px;
+  }
+  .hero h1{
+    font-size:clamp(34px,4.4vw,50px);
+    letter-spacing:1px;color:var(--brand-deep);margin-bottom:16px;
+  }
+  .hero-desc{
+    font-size:16px;color:var(--ink-soft);max-width:520px;margin-bottom:24px;
+  }
+  .hero-desc strong{color:var(--brand);font-weight:700}
+  .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+  .btn-primary{
+    background:var(--brand);color:#fff;border:0;border-radius:999px;
+    padding:12px 26px;font-size:15px;font-weight:600;transition:.18s;
+    box-shadow:0 6px 18px rgba(45,106,106,.25);
+  }
+  .btn-primary:hover{background:var(--brand-deep);transform:translateY(-1px)}
+  .btn-line{
+    background:#fff;color:var(--brand-deep);border:1.5px solid var(--brand);
+    border-radius:999px;padding:11px 24px;font-size:15px;font-weight:600;transition:.18s;
+  }
+  .btn-line:hover{background:var(--brand-soft)}
+  .hero-stats{display:flex;gap:30px;flex-wrap:wrap}
+  .hero-stats div b{display:block;font-size:23px;color:var(--brand-deep);line-height:1.2}
+  .hero-stats div span{font-size:12.5px;color:var(--ink-mute)}
+
+  .hero-visual{
+    position:relative;background:linear-gradient(150deg,#e4efed,#f7f5f2 60%);
+    border:1px solid var(--line);border-radius:24px;padding:22px;
+    min-height:330px;box-shadow:var(--shadow-lg);
+    overflow:hidden;
+  }
+  .hero-visual svg{width:100%;height:auto;display:block}
+  .hv-card{
+    position:absolute;background:#fff;border-radius:12px;box-shadow:var(--shadow);
+    padding:10px 13px;font-size:12px;border:1px solid var(--line);
+  }
+  .hv-card b{display:block;color:var(--brand-deep);font-size:13.5px;margin-bottom:2px}
+  .hv-card span{color:var(--ink-mute)}
+  .hv-c1{top:18px;left:18px}
+  .hv-c2{bottom:20px;right:18px}
+  .hv-c3{bottom:96px;left:14px;border-left:3px solid var(--accent)}
+
+  /* ============ 主容器三栏 ============ */
+  .layout{
+    max-width:var(--maxw);margin:0 auto;padding:20px 20px 60px;
+    display:grid;grid-template-columns:180px minmax(0,1fr) 250px;gap:30px;
+    align-items:start;
+  }
+  .col-left,.col-right{position:sticky;top:calc(34px + 66px + 16px)}
+  @media(min-width:1025px){
+    .layout{grid-template-columns:180px minmax(0,1fr) 250px}
+  }
+
+  /* 左频道栏 */
+  .side-block{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:16px 14px;margin-bottom:16px;box-shadow:var(--shadow);
+  }
+  .side-title{
+    font-size:12.5px;font-weight:700;color:var(--ink-mute);letter-spacing:1.5px;
+    text-transform:uppercase;margin-bottom:10px;
+  }
+  .chan-list li a{
+    display:flex;align-items:center;gap:9px;
+    padding:8px 9px;border-radius:8px;font-size:13.8px;color:var(--ink-soft);
+    transition:.15s;
+  }
+  .chan-list li a:hover{background:var(--brand-soft);color:var(--brand-deep)}
+  .chan-list li a::before{
+    content:"";width:5px;height:5px;border-radius:50%;background:var(--brand);
+    opacity:.55;flex:none;
+  }
+  .side-note{font-size:12.5px;color:var(--ink-mute);line-height:1.7}
+
+  /* 右辅助栏 */
+  .hot-list li{
+    display:flex;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line);
+    font-size:13.5px;line-height:1.5;
+  }
+  .hot-list li:last-child{border-bottom:0}
+  .hot-rank{
+    flex:none;width:20px;height:20px;border-radius:6px;background:var(--bg);
+    color:var(--ink-mute);font-size:12px;font-weight:700;
+    display:flex;align-items:center;justify-content:center;margin-top:2px;
+  }
+  .hot-list li:nth-child(1) .hot-rank{background:var(--accent);color:#fff}
+  .hot-list li:nth-child(2) .hot-rank{background:var(--gold);color:#fff}
+  .hot-list li:nth-child(3) .hot-rank{background:var(--brand);color:#fff}
+  .hot-list a:hover{color:var(--brand)}
+  .hot-list .meta{display:block;font-size:11.5px;color:var(--ink-mute);margin-top:1px}
+
+  /* ============ 通用板块 ============ */
+  .section{margin-bottom:46px;scroll-margin-top:calc(var(--sticky-h) + 20px)}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:20px}
+  .sec-head h2{font-size:23px;color:var(--brand-deep);letter-spacing:.5px}
+  .sec-head .sub{font-size:13px;color:var(--ink-mute);margin-top:4px;font-weight:400}
+  .sec-head .more{font-size:13px;color:var(--brand);white-space:nowrap}
+  .sec-head .more:hover{text-decoration:underline}
+
+  /* 概览正文 */
+  .overview{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:24px 26px;box-shadow:var(--shadow);
+    font-size:15px;color:var(--ink-soft);
+  }
+  .overview p:last-child{margin-bottom:0}
+  .overview strong{color:var(--brand-deep)}
+
+  /* 精选卡片 */
+  .card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+  .card{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    overflow:hidden;box-shadow:var(--shadow);transition:.18s;display:flex;flex-direction:column;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#d6cec2}
+  .card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--brand-soft)}
+  .card-img img{width:100%;height:100%;object-fit:cover}
+  .card-tag{
+    position:absolute;top:10px;left:10px;background:rgba(30,74,74,.88);color:#fff;
+    font-size:11.5px;padding:3px 9px;border-radius:999px;backdrop-filter:blur(4px);
+  }
+  .card-body{padding:14px 15px 16px;flex:1;display:flex;flex-direction:column}
+  .card-body h3{font-size:16px;color:var(--ink);margin-bottom:7px}
+  .card-body h3:hover{color:var(--brand)}
+  .card-body p{font-size:13px;color:var(--ink-soft);line-height:1.65;margin-bottom:11px;flex:1}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
+  .tags span{
+    font-size:11.5px;color:var(--brand-deep);background:var(--brand-soft);
+    padding:2px 8px;border-radius:5px;
+  }
+  .card-foot{
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:12px;color:var(--ink-mute);border-top:1px solid var(--line);padding-top:10px;
+  }
+  .card-foot .score{color:var(--accent);font-weight:700}
+
+  /* 动态列表 */
+  .update-list{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    box-shadow:var(--shadow);overflow:hidden;
+  }
+  .update-list li{
+    display:flex;gap:14px;align-items:baseline;padding:13px 20px;
+    border-bottom:1px solid var(--line);font-size:14px;
+  }
+  .update-list li:last-child{border-bottom:0}
+  .update-list li:hover{background:#fbfaf8}
+  .up-time{flex:none;width:74px;font-size:12px;color:var(--ink-mute);font-variant-numeric:tabular-nums}
+  .up-name{font-weight:600;color:var(--ink);flex:none;min-width:0}
+  .up-name:hover{color:var(--brand)}
+  .up-desc{font-size:13px;color:var(--ink-soft);flex:1;min-width:0}
+  .up-badge{
+    flex:none;font-size:11px;padding:1px 7px;border-radius:4px;
+    background:var(--accent-soft);color:var(--accent);
+  }
+
+  /* 分类入口 */
+  .cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+  .cat-item{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+    padding:15px 14px;transition:.16s;display:block;
+  }
+  .cat-item:hover{border-color:var(--brand);background:var(--brand-soft)}
+  .cat-item b{display:block;font-size:15px;color:var(--brand-deep);margin-bottom:4px}
+  .cat-item span{font-size:12px;color:var(--ink-mute);line-height:1.5;display:block}
+
+  /* 深度解析 */
+  .deep{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:30px 34px;box-shadow:var(--shadow);
+  }
+  .deep h3{
+    font-size:18px;color:var(--brand-deep);margin:26px 0 10px;
+    padding-left:12px;border-left:3px solid var(--brand);
+  }
+  .deep h3:first-child{margin-top:0}
+  .deep p{font-size:14.5px;color:var(--ink-soft);line-height:1.85}
+  .deep ul{margin:0 0 16px}
+  .deep ul li{
+    position:relative;padding-left:18px;font-size:14px;color:var(--ink-soft);
+    line-height:1.8;margin-bottom:6px;
+  }
+  .deep ul li::before{
+    content:"";position:absolute;left:2px;top:10px;width:6px;height:6px;
+    border-radius:50%;background:var(--accent);opacity:.7;
+  }
+  .deep blockquote{
+    margin:18px 0;padding:14px 18px;background:var(--brand-soft);
+    border-radius:var(--radius-sm);font-size:14px;color:var(--brand-deep);
+    border-left:3px solid var(--brand);
+  }
+
+  /* 体验指南步骤 */
+  .steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .step{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:18px 20px;box-shadow:var(--shadow);display:flex;gap:14px;
+  }
+  .step-num{
+    flex:none;width:34px;height:34px;border-radius:9px;background:var(--brand);
+    color:#fff;font-weight:800;font-size:16px;display:flex;align-items:center;justify-content:center;
+  }
+  .step h4{font-size:15.5px;color:var(--ink);margin-bottom:5px}
+  .step p{font-size:13.2px;color:var(--ink-soft);margin:0;line-height:1.7}
+
+  /* FAQ */
+  .faq-list{display:flex;flex-direction:column;gap:10px}
+  details.faq{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+    overflow:hidden;
+  }
+  details.faq summary{
+    padding:14px 18px;font-size:14.5px;font-weight:600;color:var(--ink);
+    cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+  }
+  details.faq summary::-webkit-details-marker{display:none}
+  details.faq summary::after{
+    content:"+";font-size:18px;color:var(--brand);font-weight:400;flex:none;
+    transition:.2s;
+  }
+  details.faq[open] summary::after{content:"−"}
+  details.faq[open] summary{color:var(--brand-deep);background:#fbfaf8}
+  details.faq .ans{
+    padding:0 18px 16px;font-size:13.6px;color:var(--ink-soft);line-height:1.8;
+    border-top:1px solid var(--line);padding-top:14px;
+  }
+
+  /* 评论 */
+  .comment-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+  .comment{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+    padding:15px 17px;box-shadow:var(--shadow);
+  }
+  .cm-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+  .cm-avatar{
+    width:30px;height:30px;border-radius:50%;flex:none;
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;font-weight:700;color:#fff;
+  }
+  .cm-name{font-size:13.5px;font-weight:600;color:var(--ink)}
+  .cm-date{font-size:11.5px;color:var(--ink-mute);margin-left:auto}
+  .comment p{font-size:13.2px;color:var(--ink-soft);margin:0;line-height:1.7}
+
+  /* 资讯 */
+  .news-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .news-item{
+    display:flex;gap:14px;background:var(--panel);border:1px solid var(--line);
+    border-radius:var(--radius);overflow:hidden;padding:13px;box-shadow:var(--shadow);
+    transition:.16s;
+  }
+  .news-item:hover{border-color:#d6cec2;transform:translateY(-2px)}
+  .news-thumb{width:96px;height:72px;flex:none;border-radius:8px;overflow:hidden;background:var(--brand-soft)}
+  .news-thumb img{width:100%;height:100%;object-fit:cover}
+  .news-body h4{font-size:14px;color:var(--ink);margin-bottom:5px;line-height:1.45}
+  .news-body h4:hover{color:var(--brand)}
+  .news-body p{font-size:12.3px;color:var(--ink-mute);margin:0;line-height:1.6}
+  .news-date{display:block;font-size:11.5px;color:var(--brand);margin-bottom:4px;font-weight:600}
+
+  /* 相关推荐标签 */
+  .rec-tags{display:flex;flex-wrap:wrap;gap:10px}
+  .rec-tags a{
+    background:var(--panel);border:1px solid var(--line);border-radius:999px;
+    padding:8px 16px;font-size:13.5px;color:var(--ink-soft);transition:.15s;
+  }
+  .rec-tags a:hover{border-color:var(--brand);color:var(--brand-deep);background:var(--brand-soft)}
+
+  /* 榜单时间线 */
+  .board-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+  .board{
+    background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+    padding:20px 22px;box-shadow:var(--shadow);
+  }
+  .board h3{font-size:16.5px;color:var(--brand-deep);margin-bottom:14px}
+  .board ol li{
+    display:flex;gap:12px;align-items:flex-start;padding:10px 0;
+    border-bottom:1px dashed var(--line);font-size:13.6px;
+  }
+  .board ol li:last-child{border-bottom:0}
+  .board .num{
+    flex:none;width:22px;height:22px;border-radius:7px;background:var(--bg);
+    color:var(--ink-mute);font-size:12px;font-weight:700;display:flex;
+    align-items:center;justify-content:center;margin-top:1px;
+  }
+  .board ol li:nth-child(1) .num{background:var(--accent);color:#fff}
+  .board ol li:nth-child(2) .num{background:var(--gold);color:#fff}
+  .board ol li:nth-child(3) .num{background:var(--brand);color:#fff}
+  .board .b-name{font-weight:600;color:var(--ink)}
+  .board .b-sub{display:block;font-size:11.8px;color:var(--ink-mute);margin-top:2px}
+
+  .timeline{position:relative;padding-left:20px}
+  .timeline::before{
+    content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line);
+  }
+  .tl-item{position:relative;padding-bottom:16px}
+  .tl-item:last-child{padding-bottom:0}
+  .tl-item::before{
+    content:"";position:absolute;left:-19px;top:6px;width:10px;height:10px;border-radius:50%;
+    background:#fff;border:2.5px solid var(--brand);
+  }
+  .tl-date{font-size:12px;color:var(--brand);font-weight:600}
+  .tl-text{font-size:13.4px;color:var(--ink-soft);line-height:1.65;margin-top:2px}
+  .tl-text b{color:var(--ink)}
+
+  /* 搜索无结果 */
+  .no-result{
+    display:none;background:var(--panel);border:1px dashed var(--line);
+    border-radius:var(--radius);padding:26px;text-align:center;
+    font-size:14px;color:var(--ink-mute);margin-bottom:20px;
+  }
+
+  /* ============ 页尾 ============ */
+  .footer{
+    background:var(--brand-deep);color:#c9dcd9;margin-top:20px;
+  }
+  .footer-inner{max-width:var(--maxw);margin:0 auto;padding:44px 20px 26px}
+  .footer-top{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:34px;margin-bottom:32px}
+  .footer-brand .brand-name{color:#fff;font-size:20px}
+  .footer-brand p{font-size:13px;color:#a9c5c1;line-height:1.8;margin:12px 0 0;max-width:300px}
+  .footer-col h4{font-size:13.5px;color:#fff;margin-bottom:13px;letter-spacing:.5px}
+  .footer-col li{margin-bottom:8px}
+  .footer-col a{font-size:13px;color:#a9c5c1;transition:.15s}
+  .footer-col a:hover{color:#fff}
+  .footer-bottom{
+    border-top:1px solid rgba(255,255,255,.14);padding-top:18px;
+    display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    font-size:12.3px;color:#8fb0ac;
+  }
+  .footer-bottom .note{max-width:640px;line-height:1.7}
+
+  /* ============ 响应式 ============ */
+  @media (max-width:1100px){
+    .layout{grid-template-columns:minmax(0,1fr) 250px}
+    .col-left{display:none}
+    .hero{grid-template-columns:1fr;gap:28px}
+    .hero-visual{min-height:auto}
+  }
+  @media (max-width:1024px){
+    .nav{display:none}
+    .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    .board-wrap{grid-template-columns:1fr}
+  }
+  @media (max-width:860px){
+    .layout{grid-template-columns:1fr}
+    .col-right{position:static}
+    .steps{grid-template-columns:1fr}
+    .news-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:740px){
+    .header{top:32px}
+    .header-inner{gap:12px;flex-wrap:wrap;padding:10px 14px}
+    .search-box input{width:88px}
+    .hero{padding:28px 14px 20px}
+    .layout{padding:16px 14px 44px}
+    .card-grid{grid-template-columns:1fr}
+    .comment-grid{grid-template-columns:1fr}
+    .cat-grid{grid-template-columns:1fr 1fr}
+    .sec-head h2{font-size:20px}
+    .deep{padding:22px 18px}
+    .overview{padding:18px}
+    .footer-top{grid-template-columns:1fr 1fr;gap:24px}
+    .footer-brand{grid-column:1/-1}
+  }
+  @media (max-width:420px){
+    .cat-grid{grid-template-columns:1fr}
+    .hero-stats{gap:18px}
+    .update-list li{flex-wrap:wrap;gap:4px 10px}
+    .up-time{width:auto}
+  }
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" role="region" aria-label="站点公告">
+  <div class="announce-inner">
+    <span class="dot" aria-hidden="true"></span>
+    <span class="txt"><b>本周新增 26 篇科普长文</b>：青春期身体变化、两性沟通与自我保护专题同步上线</span>
+    <a href="/#updates">查看更新</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="header">
+  <div class="header-inner">
+    <a class="brand" href="/#top" aria-label="性教育科普首页">
+      <svg class="brand-logo" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="22" fill="#e4efed"/>
+        <path d="M24 11c-1 5-3.5 8-8 9.5 4.5 1.5 7 4.5 8 9.5 1-5 3.5-8 8-9.5-4.5-1.5-7-4.5-8-9.5z" fill="#2d6a6a"/>
+        <path d="M16 31c2 3 4.6 4.6 8 4.6s6-1.6 8-4.6" stroke="#c96a4a" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">性教育科普</span>
+        <span class="brand-sub">HEALTH · GROWTH</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#featured">精选内容</a>
+      <a href="/#updates">最新动态</a>
+      <a href="/#categories">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问答</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-box" role="search">
+        <label for="siteSearch" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">搜索内容</label>
+        <input id="siteSearch" type="search" placeholder="搜索条目/类型" autocomplete="off">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+      <a class="btn-ghost" href="/#guide">新手指南</a>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <span class="hero-eyebrow">科学 · 尊重 · 陪伴成长</span>
+    <h1>性教育科普</h1>
+    <p class="hero-desc">从青春期身体变化到两性沟通与自我保护，用<strong>可查证的医学常识</strong>和<strong>真实场景问答</strong>，帮助青少年、家长和教育工作者建立健康、平等、负责的性观念。</p>
+    <div class="hero-actions">
+      <a class="btn-primary" href="/#featured">浏览精选内容</a>
+      <a class="btn-line" href="/#faq">看看常见问题</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>1,280+</b><span>科普条目</span></div>
+      <div><b>86</b><span>专题合集</span></div>
+      <div><b>每周 3 次</b><span>内容更新</span></div>
+    </div>
+  </div>
+  <div class="hero-visual" aria-hidden="true">
+    <svg viewBox="0 0 420 300" role="presentation">
+      <defs>
+        <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#2d6a6a"/>
+          <stop offset="1" stop-color="#4f9b8e"/>
+        </linearGradient>
+        <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#c96a4a"/>
+          <stop offset="1" stop-color="#e0a48d"/>
+        </linearGradient>
+      </defs>
+      <circle cx="300" cy="80" r="76" fill="url(#g1)" opacity=".14"/>
+      <circle cx="120" cy="210" r="58" fill="url(#g2)" opacity=".16"/>
+      <path d="M210 70c-16 34-48 52-84 60 36 8 68 26 84 60 16-34 48-52 84-60-36-8-68-26-84-60z" fill="url(#g1)" opacity=".9"/>
+      <path d="M120 200c14 22 32 33 54 33s40-11 54-33" stroke="url(#g2)" stroke-width="7" stroke-linecap="round" fill="none"/>
+      <circle cx="210" cy="140" r="96" fill="none" stroke="#2d6a6a" stroke-width="1.6" stroke-dasharray="4 7" opacity=".5"/>
+      <circle cx="330" cy="210" r="9" fill="#c96a4a" opacity=".85"/>
+      <circle cx="82" cy="76" r="6" fill="#2d6a6a" opacity=".6"/>
+    </svg>
+    <div class="hv-card hv-c1"><b>青春期身体变化</b><span>更新于 11 月 24 日</span></div>
+    <div class="hv-card hv-c2"><b>两性沟通</b><span>新增 12 条问答</span></div>
+    <div class="hv-card hv-c3"><b>自我保护清单</b><span>阅读 2.4 万</span></div>
+  </div>
+</section>
+
+<!-- 三栏主容器 -->
+<div class="layout">
+
+  <!-- 左频道栏 -->
+  <aside class="col-left" aria-label="频道索引">
+    <div class="side-block">
+      <div class="side-title">频道</div>
+      <ul class="chan-list">
+        <li><a href="/#categories">青春期成长</a></li>
+        <li><a href="/#categories">身体与生理</a></li>
+        <li><a href="/#categories">两性关系</a></li>
+        <li><a href="/#categories">自我保护</a></li>
+        <li><a href="/#categories">心理健康</a></li>
+        <li><a href="/#categories">亲子沟通</a></li>
+        <li><a href="/#categories">性健康常识</a></li>
+        <li><a href="/#categories">法律与边界</a></li>
+        <li><a href="/#categories">多元与尊重</a></li>
+        <li><a href="/#categories">媒体素养</a></li>
+      </ul>
+    </div>
+    <div class="side-block">
+      <div class="side-title">阅读提示</div>
+      <p class="side-note">内容基于公开医学与教育共识整理，涉及个体差异时建议咨询专业医生或学校心理老师。</p>
+    </div>
+  </aside>
+
+  <!-- 主内容区 -->
+  <main class="col-main" id="main">
+
+    <!-- 概览 -->
+    <section class="section" id="overview">
+      <div class="sec-head">
+        <div>
+          <h2>性教育科普领域概览</h2>
+          <div class="sub">这个领域包含哪些方向、当前有哪些具体内容值得关注</div>
+        </div>
+      </div>
+      <div class="overview">
+        <p><strong>性教育科普</strong>并不是单一的生理知识讲解，而是一套围绕身体、关系与自我认知展开的长期教育内容。它通常包含几条主线：其一是青春期身体变化与生理卫生，涉及月经、遗精、第二性征发育、身高体重变化等具体议题；其二是两性关系与沟通，包括如何表达好感、如何拒绝、如何识别不健康关系；其三是自我保护与法律边界，涵盖身体自主权、性骚扰识别、网络安全与求助渠道；其四是心理健康与自我认同，涉及身体形象焦虑、性别认知、情绪波动。</p>
+        <p>当前值得关注的方向有三类。第一类是<strong>青春期成长</strong>内容，家长与青少年对“什么时候开始讲、讲到什么程度”存在大量真实疑问，围绕具体年龄段的答疑需求明显上升。第二类是<strong>两性沟通与边界</strong>内容，校园与职场场景下的拒绝技巧、同意原则成为高频搜索词。第三类是<strong>媒体素养</strong>内容，网络信息真假混杂，如何辨别不科学的性健康说法、如何不被错误内容误导，正成为新的关注点。</p>
+        <p>这些方向共同指向一个目标：让性教育脱离羞耻与回避，变成可以公开讨论、可以查证、可以落到日常判断中的常识。无论是第一次接触这类内容的青少年，还是希望和孩子开口的家长，都能从具体条目入手，逐步建立完整的认知框架。</p>
+      </div>
+    </section>
+
+    <!-- 搜索结果反馈 -->
+    <div class="no-result" id="noResult">没有找到匹配的内容条目，试试“青春期”“自我保护”“两性沟通”等关键词。</div>
+
+    <!-- 精选内容 -->
+    <section class="section" id="featured">
+      <div class="sec-head">
+        <div>
+          <h2>精选内容推荐</h2>
+          <div class="sub">按主题精选的科普长文与专题，附具体看点与阅读数据</div>
+        </div>
+        <a class="more" href="/#categories">全部分类 →</a>
+      </div>
+      <div class="card-grid" id="cardGrid">
+
+        <article class="card" data-keywords="青春期 身体变化 第二性征 发育">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/qingchunqi-fayu01/400/300" width="400" height="300" loading="lazy" alt="青春期身体变化科普专题封面">
+            <span class="card-tag">青春期成长</span>
+          </div>
+          <div class="card-body">
+            <h3>青春期身体变化时间表：从 10 岁到 16 岁</h3>
+            <p>按年龄段梳理身高突增、第二性征出现、月经初潮与遗精的常见时间范围，说明个体差异为何正常，以及哪些信号值得就医咨询。</p>
+            <div class="tags"><span>第二性征</span><span>发育节奏</span><span>生理卫生</span></div>
+            <div class="card-foot"><span>阅读 3.6 万</span><span class="score">9.2 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="两性沟通 拒绝 边界 同意">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/liangxing-goutong02/400/300" width="400" height="300" loading="lazy" alt="两性沟通与边界专题封面">
+            <span class="card-tag">两性关系</span>
+          </div>
+          <div class="card-body">
+            <h3>如何得体地拒绝：校园与职场场景对照</h3>
+            <p>拆解拒绝时的语言结构、肢体信号与后续处理，对比同学、同事、亲密关系三种场景下不同的表达方式，附可套用的句式示例。</p>
+            <div class="tags"><span>拒绝技巧</span><span>同意原则</span><span>场景对照</span></div>
+            <div class="card-foot"><span>阅读 2.8 万</span><span class="score">9.0 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="自我保护 性骚扰 识别 求助">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/ziwo-baohu03/400/300" width="400" height="300" loading="lazy" alt="自我保护与求助渠道专题封面">
+            <span class="card-tag">自我保护</span>
+          </div>
+          <div class="card-body">
+            <h3>性骚扰识别清单：哪些行为已经越界</h3>
+            <p>用具体行为描述替代抽象概念，列举言语、肢体、网络三类越界表现，说明遭遇后保留证据与求助的先后顺序，附可联系的机构类型。</p>
+            <div class="tags"><span>越界识别</span><span>证据保留</span><span>求助渠道</span></div>
+            <div class="card-foot"><span>阅读 4.1 万</span><span class="score">9.4 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="月经 生理期 卫生 痛经">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/yuejing-jiankang04/400/300" width="400" height="300" loading="lazy" alt="月经健康与生理期护理专题封面">
+            <span class="card-tag">身体与生理</span>
+          </div>
+          <div class="card-body">
+            <h3>月经周期管理：周期记录、痛经应对与就医信号</h3>
+            <p>讲清正常周期范围、经量判断方法、常见痛经缓解手段，并列出月经紊乱、异常出血等需要及时就诊的具体情形。</p>
+            <div class="tags"><span>周期记录</span><span>痛经应对</span><span>就医信号</span></div>
+            <div class="card-foot"><span>阅读 3.2 万</span><span class="score">9.1 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="亲子沟通 家长 开口 性教育">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/qinzi-goutong05/400/300" width="400" height="300" loading="lazy" alt="亲子性教育沟通专题封面">
+            <span class="card-tag">亲子沟通</span>
+          </div>
+          <div class="card-body">
+            <h3>家长开口指南：不同年龄段的谈性方式</h3>
+            <p>按学龄前、小学、初中三个阶段给出谈话切入点与常见误区，重点说明如何回答“我从哪里来”这类问题而不回避、不敷衍。</p>
+            <div class="tags"><span>分龄沟通</span><span>常见误区</span><span>谈话切入</span></div>
+            <div class="card-foot"><span>阅读 2.1 万</span><span class="score">8.8 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="身体形象 焦虑 自我认同 心理健康">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/shenti-xingxiang06/400/300" width="400" height="300" loading="lazy" alt="身体形象与自我认同专题封面">
+            <span class="card-tag">心理健康</span>
+          </div>
+          <div class="card-body">
+            <h3>身体形象焦虑：社交媒体时代如何看自己</h3>
+            <p>分析修图文化、身材对比对自我评价的影响，给出识别焦虑信号、建立稳定自我认知的具体练习，适合初高中学生与家长一起读。</p>
+            <div class="tags"><span>身体形象</span><span>社交媒体</span><span>自我认知</span></div>
+            <div class="card-foot"><span>阅读 1.9 万</span><span class="score">8.6 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="网络安全 隐私 裸聊 诈骗">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/wangluo-yinsi07/400/300" width="400" height="300" loading="lazy" alt="网络性安全与隐私保护专题封面">
+            <span class="card-tag">自我保护</span>
+          </div>
+          <div class="card-body">
+            <h3>网络性安全：隐私泄露、裸聊敲诈与举报路径</h3>
+            <p>梳理常见网络性风险的话术套路，说明哪些信息绝不能发送、遭遇敲诈时先做什么，并给出平台举报与报警的具体流程。</p>
+            <div class="tags"><span>隐私保护</span><span>敲诈应对</span><span>举报流程</span></div>
+            <div class="card-foot"><span>阅读 3.8 万</span><span class="score">9.3 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="避孕 性健康 安全 常识">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/biyun-changshi08/400/300" width="400" height="300" loading="lazy" alt="避孕与性健康常识专题封面">
+            <span class="card-tag">性健康常识</span>
+          </div>
+          <div class="card-body">
+            <h3>常见避孕方式对比：有效率、适用人群与误区</h3>
+            <p>用对照表比较屏障避孕、短效口服、宫内节育等方式的实际有效率与注意事项，并澄清体外、安全期等常见误区的失败风险。</p>
+            <div class="tags"><span>方式对比</span><span>有效率</span><span>误区澄清</span></div>
+            <div class="card-foot"><span>阅读 4.6 万</span><span class="score">9.5 分</span></div>
+          </div>
+        </article>
+
+        <article class="card" data-keywords="法律 边界 同意 年龄">
+          <div class="card-img">
+            <img src="https://picsum.photos/seed/falv-bianjie09/400/300" width="400" height="300" loading="lazy" alt="法律边界与同意年龄专题封面">
+            <span class="card-tag">法律与边界</span>
+          </div>
+          <div class="card-body">
+            <h3>同意原则与法律边界：青少年需要知道什么</h3>
+            <p>解释“同意”必须满足的自愿、知情、可撤回三个条件，结合常见校园场景说明哪些行为涉及违法，以及未成年人保护的相关规定。</p>
+            <div class="tags"><span>同意原则</span><span>法律边界</span><span>未成年人保护</span></div>
+            <div class="card-foot"><span>阅读 2.7 万</span><span class="score">9.0 分</span></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- 最新动态 -->
+    <section class="section" id="updates">
+      <div class="sec-head">
+        <div>
+          <h2>最新更新与动态</h2>
+          <div class="sub">截至 2026 年 11 月 25 日的条目上新与专题进展</div>
+        </div>
+      </div>
+      <ul class="update-list">
+        <li><span class="up-time">今天 09:30</span><a class="up-name" href="/#featured">青春期身体变化时间表</a><span class="up-desc">补充 14—16 岁发育节奏说明，新增 6 条家长提问</span><span class="up-badge">上新</span></li>
+        <li><span class="up-time">今天 08:10</span><a class="up-name" href="/#faq">两性沟通问答</a><span class="up-desc">新增“如何拒绝不喜欢的邀约”等 4 条问答</span><span class="up-badge">更新</span></li>
+        <li><span class="up-time">昨天 21:10</span><a class="up-name" href="/#deep">同意原则专题</a><span class="up-desc">重写第二章节，加入校园场景对照表</span></li>
+        <li><span class="up-time">昨天 16:40</span><a class="up-name" href="/#categories">网络性安全</a><span class="up-desc">新增裸聊敲诈应对流程与平台举报入口说明</span><span class="up-badge">上新</span></li>
+        <li><span class="up-time">11 月 23 日</span><a class="up-name" href="/#featured">常见避孕方式对比</a><span class="up-desc">更新有效率数据，补充哺乳期注意事项</span></li>
+        <li><span class="up-time">11 月 22 日</span><a class="up-name" href="/#featured">身体形象焦虑</a><span class="up-desc">新增 3 组社交媒体对比实验的解读</span></li>
+        <li><span class="up-time">11 月 20 日</span><a class="up-name" href="/#guide">新手指南</a><span class="up-desc">调整阅读顺序建议，加入家长与青少年双路径</span></li>
+        <li><span class="up-time">11 月 18 日</span><a class="up-name" href="/#featured">性骚扰识别清单</a><span class="up-desc">补充网络骚扰取证与保存的具体步骤</span><span class="up-badge">上新</span></li>
+        <li><span class="up-time">11 月 15 日</span><a class="up-name" href="/#categories">月经周期管理</a><span class="up-desc">新增周期记录模板与异常出血判断标准</span></li>
+        <li><span class="up-time">11 月 12 日</span><a class="up-name" href="/#featured">家长开口指南</a><span class="up-desc">补充学龄前阶段谈话示例 5 组</span></li>
+        <li><span class="up-time">11 月 8 日</span><a class="up-name" href="/#deep">媒体素养专题</a><span class="up-desc">整理 12 条常见伪科学说法并逐条辟谣</span><span class="up-badge">上新</span></li>
+        <li><span class="up-time">11 月 3 日</span><a class="up-name" href="/#board">月度阅读榜</a><span class="up-desc">10 月榜单发布，避孕对比与自我保护类居前</span></li>
+      </ul>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="section" id="categories">
+      <div class="sec-head">
+        <div>
+          <h2>分类入口</h2>
+          <div class="sub">按垂类定位，覆盖用户最常搜索的具体类别</div>
+        </div>
+      </div>
+      <div class="cat-grid">
+        <a class="cat-item" href="/#featured"><b>青春期成长</b><span>身体变化、发育节奏、初潮与遗精</span></a>
+        <a class="cat-item" href="/#featured"><b>身体与生理</b><span>月经周期、生理卫生、常见不适</span></a>
+        <a class="cat-item" href="/#featured"><b>两性关系</b><span>沟通表达、拒绝技巧、健康关系识别</span></a>
+        <a class="cat-item" href="/#featured"><b>自我保护</b><span>越界识别、证据保留、求助渠道</span></a>
+        <a class="cat-item" href="/#featured"><b>心理健康</b><span>身体形象、情绪波动、自我认同</span></a>
+        <a class="cat-item" href="/#featured"><b>亲子沟通</b><span>分龄谈性、常见误区、谈话示例</span></a>
+        <a class="cat-item" href="/#featured"><b>性健康常识</b><span>避孕方式、疾病预防、就医信号</span></a>
+        <a class="cat-item" href="/#featured"><b>法律与边界</b><span>同意原则、未成年人保护、维权路径</span></a>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="section" id="deep">
+      <div class="sec-head">
+        <div>
+          <h2>深度解析：性教育内容的类型差异与判断维度</h2>
+          <div class="sub">同一个话题，不同讲法差别很大，看懂差异才能选对内容</div>
+        </div>
+      </div>
+      <div class="deep">
+        <h3>一、同一主题下的三种内容类型</h3>
+        <p>搜索性教育科普时，最先遇到的往往是三类内容：生理知识型、关系沟通型、风险应对型。它们看起来都讲“性”，但解决的问题完全不同，混着看容易越看越乱。</p>
+        <ul>
+          <li><strong>生理知识型</strong>回答“身体发生了什么”。例如月经周期的激素变化、遗精的生理机制、第二性征出现的先后顺序。这类内容需要准确的医学来源，判断标准是是否标注了参考依据、是否区分了正常范围与异常信号。</li>
+          <li><strong>关系沟通型</strong>回答“怎么和人相处”。例如如何表达好感、如何拒绝、如何判断一段关系是否健康。这类内容没有唯一答案，判断标准是是否给出了具体场景下的可操作表达，而不是只讲“要尊重对方”这类口号。</li>
+          <li><strong>风险应对型</strong>回答“出事之后怎么办”。例如遭遇骚扰后的取证顺序、网络隐私泄露后的举报路径。这类内容最需要具体步骤和时间节点，判断标准是流程是否可执行、是否指明了求助机构类型。</li>
+        </ul>
+
+        <h3>二、判断一个条目值不值得投入时间</h3>
+        <p>面对同一话题的多篇内容，可以从四个维度快速比较，通常几分钟就能筛掉大部分不合格的条目。</p>
+        <ul>
+          <li><strong>是否区分个体差异。</strong>好的生理类内容会说“多数人在 10—14 岁之间出现，但提前或延后一到两年也属常见”，而不是给出一个绝对值让人对号入座。</li>
+          <li><strong>是否给出判断信号。</strong>比如痛经内容，会明确写出“影响到正常上学、服药无效、伴随异常出血时应就医”，而不只是说“多喝热水”。</li>
+          <li><strong>是否承认不确定性。</strong>关系类问题往往没有标准答案，靠谱的内容会说“这种情况下两种做法都有人选，取决于你的舒适度”，而不是断言唯一正确答案。</li>
+          <li><strong>是否指向下一步。</strong>风险应对类内容应当告诉你找谁、说什么、保留什么，如果读完仍然不知道下一步做什么，说明它只是情绪安慰而非实用指南。</li>
+        </ul>
+
+        <h3>三、常见误区与具体澄清</h3>
+        <p>网络上流传的不少说法看似有道理，实际经不起推敲。以下几条是搜索中出现频率较高的误区，值得逐条对照。</p>
+        <ul>
+          <li>“安全期避孕很可靠”——安全期受周期波动影响极大，失败率远高于屏障避孕与短效口服，不适合作为主要方式。</li>
+          <li>“第一次不会怀孕”——是否怀孕与是否第一次没有关系，只与是否发生排卵期无保护行为有关。</li>
+          <li>“痛经忍忍就过去了”——原发性痛经确实常见，但继发性痛经可能提示子宫内膜异位等问题，持续加重应当就诊。</li>
+          <li>“被骚扰是因为穿得少”——这是典型的责任转移说法，越界行为的责任在实施者，与受害者穿着无关。</li>
+        </ul>
+
+        <blockquote>判断一条性健康说法是否可信，最简单的办法是看它有没有说明适用条件和例外情况。凡是给出绝对结论、又不提任何前提的内容，都值得多查一步。</blockquote>
+
+        <h3>四、不同人群的阅读侧重</h3>
+        <p>同样的内容库，青少年、家长、教育工作者的关注点差异明显，按角色选择入口能显著减少无效阅读。</p>
+        <ul>
+          <li><strong>青少年自己看</strong>：优先生理知识型与关系沟通型，先搞清楚身体变化属于正常范围，再学习如何表达拒绝与求助。</li>
+          <li><strong>家长看</strong>：优先分龄沟通与误区澄清，重点不是背知识点，而是练习如何不回避地回答孩子的问题。</li>
+          <li><strong>教育工作者看</strong>：优先风险应对型与法律边界，需要掌握的是流程、机构与话术，便于在真实场景中转介。</li>
+        </ul>
+        <p>需要强调的是，任何条目都不能替代专业诊断与个体咨询。涉及身体异常、心理困扰或法律纠纷时，学校心理老师、正规医疗机构与法律援助机构才是最终的求助对象。</p>
+      </div>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="section" id="guide">
+      <div class="sec-head">
+        <div>
+          <h2>体验指南：先看什么、怎么判断、如何比较</h2>
+          <div class="sub">内容消费的顺序与判断依据，不是页面操作说明</div>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div>
+            <h4>先补生理常识，再谈关系</h4>
+            <p>如果对身体变化还没有基本概念，直接看两性沟通内容容易产生误解。建议先用一两篇生理知识型条目打底，知道什么是正常范围。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div>
+            <h4>按当前场景选类型</h4>
+            <p>正在经历身体变化就看青春期成长；遇到人际困扰就看两性沟通；已经发生越界行为就直接看自我保护与法律边界，不必按顺序读。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div>
+            <h4>用四个维度判断条目质量</h4>
+            <p>看是否区分个体差异、是否给出判断信号、是否承认不确定性、是否指向下一步。四项里满足三项以上，通常值得读完。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div>
+            <h4>同类条目横向比较</h4>
+            <p>同一话题读两到三篇，重点比较它们对“例外情况”的处理。说法越具体、越愿意说明前提的，可信度通常越高。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">5</div>
+          <div>
+            <h4>把结论落到具体行动</h4>
+            <p>读完风险应对类内容后，写下自己所在城市的求助电话、学校心理老师联系方式，比记住概念更有用。</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">6</div>
+          <div>
+            <h4>不确定时转向专业渠道</h4>
+            <p>涉及身体异常、持续情绪困扰或法律纠纷，内容只能提供认知框架，最终应咨询正规医疗机构、心理老师或法律援助机构。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="sec-head">
+        <div>
+          <h2>常见问答</h2>
+          <div class="sub">围绕性教育科普的具体内容展开的真实提问</div>
+        </div>
+      </div>
+      <div class="faq-list">
+        <details class="faq">
+          <summary>青春期身体变化一般从几岁开始，提前或延后正常吗？</summary>
+          <div class="ans">女孩通常在 8—13 岁之间出现乳房发育等早期信号，男孩多在 9—14 岁出现睾丸增大等变化，月经初潮与首次遗精多在 11—16 岁之间。整体提前或延后一到两年都属常见范围。如果女孩 8 岁前出现明显第二性征，或男孩 14 岁后仍无任何发育迹象，建议到儿科内分泌门诊评估，而不是自行等待。</div>
+        </details>
+        <details class="faq">
+          <summary>第一次接触这类内容，从哪个条目开始看比较好？</summary>
+          <div class="ans">如果是对身体变化有疑问，建议先看“青春期身体变化时间表”，建立正常范围的判断；如果是想了解如何与人相处，从“如何得体地拒绝”入手更实用；家长则可以先读“家长开口指南”，按孩子年龄段找到对应谈话方式。不建议一开始就大量阅读风险应对类内容，容易造成不必要的紧张。</div>
+        </details>
+        <details class="faq">
+          <summary>两性沟通和自我保护的内容有什么区别，需要都看吗？</summary>
+          <div class="ans">两性沟通解决的是日常相处中的表达与边界问题，比如如何拒绝、如何判断关系是否健康；自我保护解决的是已经发生或可能发生的越界行为，重点是识别、取证与求助。前者是预防性的日常练习，后者是应急性的流程准备。理想状态是两者都了解，但阅读顺序上建议先沟通、后应对。</div>
+        </details>
+        <details class="faq">
+          <summary>痛经到什么程度需要去医院，而不是继续忍？</summary>
+          <div class="ans">如果痛经已经影响到正常上学或工作、常规止痛药效果不佳、疼痛逐年加重，或伴随月经量异常增多、经期外出血、性交疼痛等情况，应当及时就诊妇科排查继发性原因。原发性痛经确实常见，但“常见”不等于“必须忍”，持续加重的疼痛是身体发出的明确信号。</div>
+        </details>
+        <details class="faq">
+          <summary>常见避孕方式的失败率差别有多大？</summary>
+          <div class="ans">在正确且持续使用的前提下，屏障避孕的典型使用失败率约为 13%—18%，短效口服避孕药在规律服用时低于 1%，宫内节育方式低于 1%。体外排精与安全期法的典型使用失败率明显更高，可达 20% 以上。差别主要来自是否“每次都正确使用”，而不是方法本身的实验室数据。</div>
+        </details>
+        <details class="faq">
+          <summary>遇到网络性骚扰或隐私被威胁，第一步应该做什么？</summary>
+          <div class="ans">第一步是停止与对方的一切进一步沟通，不要再发送任何内容，同时完整保存聊天记录、账号信息与转账记录截图。第二步是在平台内使用举报功能，并同步告知可信任的成年人。第三步，如果涉及敲诈勒索或隐私传播，携带保存的证据到就近派出所报案。不要因为羞耻而删除记录，证据是后续处理的基础。</div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="section" id="comments">
+      <div class="sec-head">
+        <div>
+          <h2>用户评论</h2>
+          <div class="sub">来自读者对具体条目与类型的真实反馈</div>
+        </div>
+      </div>
+      <div class="comment-grid">
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#2d6a6a">林</span><span class="cm-name">林间小满</span><span class="cm-date">11 月 24 日</span></div><p>青春期时间表那篇写得比较克制，没有给死数字，而是说提前延后一两年都常见，看完没那么焦虑了。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#c96a4a">周</span><span class="cm-name">周末不加班</span><span class="cm-date">11 月 23 日</span></div><p>拒绝技巧那篇的句式示例挺实用的，尤其是同事场景那一组，比单纯讲“要勇敢说不”具体多了。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#b8892f">陈</span><span class="cm-name">陈老师带班</span><span class="cm-date">11 月 22 日</span></div><p>作为班主任，性骚扰识别清单是我目前看到最清晰的一版，言语、肢体、网络三类分得很细，准备在班会上参考。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#4f9b8e">吴</span><span class="cm-name">吴桐树下</span><span class="cm-date">11 月 21 日</span></div><p>避孕对比的数据更新了，但我希望再补一下不同方式对月经的影响，这部分目前讲得偏少。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#7a8395">许</span><span class="cm-name">许多多妈妈</span><span class="cm-date">11 月 20 日</span></div><p>家长开口指南按年龄段分，学龄前那部分对我帮助最大，原来“我从哪里来”可以这样回答。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#2d6a6a">何</span><span class="cm-name">何同学高二</span><span class="cm-date">11 月 19 日</span></div><p>身体形象那篇提到的修图文化分析挺戳的，看完把几个总让我焦虑的账号取关了。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#c96a4a">郑</span><span class="cm-name">郑在读书</span><span class="cm-date">11 月 18 日</span></div><p>网络性安全那篇的举报流程写得很具体，但平台举报入口经常变，建议定期核对一下。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#b8892f">苏</span><span class="cm-name">苏打水加冰</span><span class="cm-date">11 月 17 日</span></div><p>同意原则那部分讲得比较清楚，自愿、知情、可撤回三个条件记住了，比抽象讲“尊重”好懂。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#4f9b8e">黄</span><span class="cm-name">黄昏散步</span><span class="cm-date">11 月 16 日</span></div><p>月经周期管理里给了记录模板，我照着记了两个月，确实看出自己的规律了，推荐。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#7a8395">罗</span><span class="cm-name">罗盘指针</span><span class="cm-date">11 月 15 日</span></div><p>整体内容不错，就是有些条目偏长，手机上读起来有点累，希望以后能加个短版摘要。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#2d6a6a">高</span><span class="cm-name">高小雨</span><span class="cm-date">11 月 14 日</span></div><p>媒体素养那篇把 12 条伪科学说法逐条辟谣，转发给家人看了，比一句“别信网上的”有用。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#c96a4a">梁</span><span class="cm-name">梁上燕子</span><span class="cm-date">11 月 13 日</span></div><p>痛经那篇写到“常见不等于必须忍”，这句话我记下来了，以前总觉得忍忍就过去了。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#b8892f">谢</span><span class="cm-name">谢绝内耗</span><span class="cm-date">11 月 12 日</span></div><p>法律边界那篇的年龄规定部分建议再细一点，不同情形适用的规定不太一样，现在略笼统。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#4f9b8e">唐</span><span class="cm-name">唐小糖</span><span class="cm-date">11 月 11 日</span></div><p>作为刚上大一的人，回头看这些内容，觉得高中就能读到会少走很多弯路。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#7a8395">韩</span><span class="cm-name">韩梅梅的猫</span><span class="cm-date">11 月 10 日</span></div><p>身体形象焦虑那篇的练习部分可以再多一些，识别信号讲得好，具体怎么调整还可以补充。</p></div>
+        <div class="comment"><div class="cm-head"><span class="cm-avatar" style="background:#2d6a6a">白</span><span class="cm-name">白露为霜</span><span class="cm-date">11 月 9 日</span></div><p>整体语气比较平实，没有说教感，这点很难得，适合和家长一起看。</p></div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="section" id="news">
+      <div class="sec-head">
+        <div>
+          <h2>相关资讯</h2>
+          <div class="sub">近期条目上新、类型趋势与社区讨论焦点</div>
+        </div>
+      </div>
+      <div class="news-grid">
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-qingchunqi11/600/400" width="600" height="400" loading="lazy" alt="青春期成长专题更新资讯配图"></div>
+          <div class="news-body"><span class="news-date">2026-11-25</span><h4>青春期成长专题新增 14—16 岁阶段内容</h4><p>补充晚发育群体的常见疑问，并加入家长提问汇总 6 条。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-wangluo12/600/400" width="600" height="400" loading="lazy" alt="网络性安全专题资讯配图"></div>
+          <div class="news-body"><span class="news-date">2026-11-23</span><h4>网络性安全条目更新举报流程，新增平台类型说明</h4><p>按社交、短视频、游戏三类平台分别给出举报入口位置。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-biyun13/600/400" width="600" height="400" loading="lazy" alt="避孕方式对比数据更新配图"></div>
+          <div class="news-body"><span class="news-date">2026-11-22</span><h4>避孕方式对比数据修订，补充哺乳期注意事项</h4><p>同步更新典型使用失败率，并新增产后恢复期的选择建议。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-xinli14/600/400" width="600" height="400" loading="lazy" alt="身体形象专题讨论资讯配图"></div>
+          <div class="news-body"><span class="news-date">2026-11-20</span><h4>身体形象专题讨论升温，修图文化成社区焦点</h4><p>读者围绕社交媒体对比压力展开讨论，相关条目阅读量上升。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-meiti15/600/400" width="600" height="400" loading="lazy" alt="媒体素养辟谣专题资讯配图"></div>
+          <div class="news-body"><span class="news-date">2026-11-15</span><h4>媒体素养辟谣合集上线，整理 12 条常见错误说法</h4><p>覆盖避孕、生理周期与两性关系三类高频误区，逐条给出澄清。</p></div>
+        </article>
+        <article class="news-item">
+          <div class="news-thumb"><img src="https://picsum.photos/seed/zixun-falv16/600/400" width="600" height="400" loading="lazy" alt="法律边界专题更新资讯配图"></div>
+          <div class="news-body"><span class="news-date">2026-11-09</span><h4>同意原则条目重写，加入校园场景对照表</h4><p>用同学、社团、兼职三种场景说明同意的具体判断方式。</p></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 相关推荐 -->
+    <section class="section" id="related">
+      <div class="sec-head">
+        <div>
+          <h2>相关推荐</h2>
+          <div class="sub">延伸方向与具体条目索引</div>
+        </div>
+      </div>
+      <div class="rec-tags">
+        <a href="/#featured">青春期发育节奏</a>
+        <a href="/#featured">月经周期记录</a>
+        <a href="/#featured">拒绝句式示例</a>
+        <a href="/#featured">同意原则三条件</a>
+        <a href="/#featured">隐私泄露取证</a>
+        <a href="/#featured">分龄亲子谈话</a>
+        <a href="/#featured">身体形象练习</a>
+        <a href="/#deep">常见伪科学辟谣</a>
+      </div>
+    </section>
+
+    <!-- 榜单与时间线 -->
+    <section class="section" id="board">
+      <div class="sec-head">
+        <div>
+          <h2>热门榜单与条目时间线</h2>
+          <div class="sub">10 月阅读榜与近期条目上线节点</div>
+        </div>
+      </div>
+      <div class="board-wrap">
+        <div class="board">
+          <h3>10 月阅读榜（截至 2026-10-31）</h3>
+          <ol>
+            <li><span class="num">1</span><div><span class="b-name">常见避孕方式对比：有效率、适用人群与误区</span><span class="b-sub">阅读 4.6 万 · 收藏 3,120</span></div></li>
+            <li><span class="num">2</span><div><span class="b-name">性骚扰识别清单：哪些行为已经越界</span><span class="b-sub">阅读 4.1 万 · 收藏 2,880</span></div></li>
+            <li><span class="num">3</span><div><span class="b-name">网络性安全：隐私泄露、裸聊敲诈与举报路径</span><span class="b-sub">阅读 3.8 万 · 收藏 2,540</span></div></li>
+            <li><span class="num">4</span><div><span class="b-name">青春期身体变化时间表：从 10 岁到 16 岁</span><span class="b-sub">阅读 3.6 万 · 收藏 2,310</span></div></li>
+            <li><span class="num">5</span><div><span class="b-name">月经周期管理：周期记录、痛经应对与就医信号</span><span class="b-sub">阅读 3.2 万 · 收藏 1,970</span></div></li>
+            <li><span class="num">6</span><div><span class="b-name">如何得体地拒绝：校园与职场场景对照</span><span class="b-sub">阅读 2.8 万 · 收藏 1,760</span></div></li>
+          </ol>
+        </div>
+        <div class="board">
+          <h3>近期条目时间线</h3>
+          <div class="timeline">
+            <div class="tl-item"><div class="tl-date">2026-11-25</div><div class="tl-text"><b>青春期身体变化时间表</b>补充 14—16 岁阶段说明</div></div>
+            <div class="tl-item"><div class="tl-date">2026-11-23</div><div class="tl-text"><b>网络性安全</b>新增三类平台举报入口说明</div></div>
+            <div class="tl-item"><div class="tl-date">2026-11-20</div><div class="tl-text"><b>身体形象焦虑</b>上线社交媒体对比实验解读</div></div>
+            <div class="tl-item"><div class="tl-date">2026-11-15</div><div class="tl-text"><b>媒体素养辟谣合集</b>整理 12 条常见错误说法</div></div>
+            <div class="tl-item"><div class="tl-date">2026-11-09</div><div class="tl-text"><b>同意原则</b>重写并加入校园场景对照表</div></div>
+            <div class="tl-item"><div class="tl-date">2026-11-03</div><div class="tl-text"><b>10 月阅读榜</b>发布，避孕与自我保护类居前</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 右辅助栏 -->
+  <aside class="col-right" aria-label="辅助信息">
+    <div class="side-block">
+      <div class="side-title">热读条目</div>
+      <ul class="hot-list">
+        <li><span class="hot-rank">1</span><div><a href="/#featured">常见避孕方式对比</a><span class="meta">阅读 4.6 万</span></div></li>
+        <li><span class="hot-rank">2</span><div><a href="/#featured">性骚扰识别清单</a><span class="meta">阅读 4.1 万</span></div></li>
+        <li><span class="hot-rank">3</span><div><a href="/#featured">网络性安全与举报路径</a><span class="meta">阅读 3.8 万</span></div></li>
+        <li><span class="hot-rank">4</span><div><a href="/#featured">青春期身体变化时间表</a><span class="meta">阅读 3.6 万</span></div></li>
+        <li><span class="hot-rank">5</span><div><a href="/#featured">月经周期管理</a><span class="meta">阅读 3.2 万</span></div></li>
+        <li><span class="hot-rank">6</span><div><a href="/#featured">如何得体地拒绝</a><span class="meta">阅读 2.8 万</span></div></li>
+      </ul>
+    </div>
+    <div class="side-block">
+      <div class="side-title">更新节奏</div>
+      <p class="side-note">每周二、四、六更新条目，重大专题上线当日追加公告。近期重点为青春期成长与网络性安全两个方向。</p>
+    </div>
+    <div class="side-block">
+      <div class="side-title">求助渠道类型</div>
+      <p class="side-note">学校心理辅导室 · 正规医疗机构妇科/儿科 · 法律援助机构 · 未成年人保护热线。具体号码以当地公布为准。</p>
+    </div>
+  </aside>
+
+</div>
+
+<!-- 页尾 -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="brand-name">性教育科普</span>
+        <p>以科学、尊重、可查证为原则，围绕青春期成长、两性沟通与自我保护，提供适合青少年、家长与教育工作者共同阅读的科普内容。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容频道</h4>
+        <ul>
+          <li><a href="/#categories">青春期成长</a></li>
+          <li><a href="/#categories">身体与生理</a></li>
+          <li><a href="/#categories">两性关系</a></li>
+          <li><a href="/#categories">自我保护</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>阅读支持</h4>
+        <ul>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>社区</h4>
+        <ul>
+          <li><a href="/#comments">用户评论</a></li>
+          <li><a href="/#board">热门榜单</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="note">内容基于公开医学与教育共识整理，仅供科普参考，不构成诊断或法律意见。涉及个体健康问题请咨询正规医疗机构，涉及法律纠纷请咨询法律援助机构。</div>
+      <div>© 2026 性教育科普 · 保留所有权利</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var grid = document.getElementById('cardGrid');
+  var noResult = document.getElementById('noResult');
+  var cards = grid ? Array.prototype.slice.call(grid.querySelectorAll('.card')) : [];
+
+  function runSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      cards.forEach(function(c){ c.style.display = ''; });
+      noResult.style.display = 'none';
+      return;
+    }
+    var hit = 0;
+    cards.forEach(function(c){
+      var text = (c.getAttribute('data-keywords') || '') + ' ' + c.textContent.toLowerCase();
+      var ok = text.toLowerCase().indexOf(q) !== -1;
+      c.style.display = ok ? '' : 'none';
+      if(ok) hit++;
+    });
+    noResult.style.display = hit === 0 ? 'block' : 'none';
+    if(hit === 0){
+      var feat = document.getElementById('featured');
+      if(feat) feat.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+  }
+
+  btn.addEventListener('click', runSearch);
+  input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); runSearch(); }
+  });
+  input.addEventListener('input', function(){
+    if(!input.value.trim()) runSearch();
+  });
+})();
+</script>
+</body>
+  </html>
